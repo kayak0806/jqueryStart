@@ -3,21 +3,64 @@
 <head>
 	<title>jQuery</title>
 	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="cssReset.css">
 	<link rel="stylesheet" type="text/css" href="jqueryStart.css">
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
 	
 </head>
 <body>
-	<h1>jQuery</h1>
+	<div id='header'>
+		<h2>login</h2>
+		<h1>BUBBLES</h1>
+		<p>colors</p>
+		<p>shapes</p>
+		<p>animals</p>
+		<p>numbers</p>
+	</div>
 
-	<ul id="first">
-		<li><p>merp</p></li>
-		<li><p>derp</p></li>
-	</ul>
-	<ul id="second">
-		<li><p>meep</p></li>
-		<li><p>deep</p></li>
-	</ul>
+	<div id="field">
+		<ul id="colors">
+			<li><a href="#purple"><p>purple</p></a></li>
+			<li><a href="#green"><p>green</p></a></li>
+			<li><a href="#red"><p>red</p></a></li>
+		</ul>
+		<ul id="shapes">
+			<li><a href="#circle"><p>circle</p></a></li>
+			<li><a href="#triangle"><p>triangle</p></a></li>
+		</ul>
+		<ul id="animals">
+			<li><a href="#cat"><p>cat</p></a></li>
+			<li><a href="#fish"><p>fish</p></a></li>
+		</ul>
+		<ul id="numbers">
+			<li><a href="#three"><p>three</p></a></li>
+		</ul>
+	</div>
+
+	<div id="login">
+		
+		<h1>Login</h1>
+		<div id="form">
+		<form name="login" action="">
+			<label for="username" id="username_label">username</label>
+			<input type="text" name="username" id="username" size="30" value="" class="text-input"/>
+			<label class="error" for="username" id="username_error">Required field</label>
+
+			<label for="password" id="password_label">password</label>
+			<input type="text" name="password" id="pasword" size="30" value="" class="text-input"/>
+			<label class="error" for="pasword" id="pasword_error">Required field</label>
+
+			<br/>
+			<input type="submit" name="submit"value="send" class="button" id="submit_button"/>
+		</form>
+		</div>
+
+	</div>
+
+	<div class="page">
+		<h1>purple</h1>
+		<p>Purple is a lovely color. It's very pretty. It can be kinda redish, or more blueish, and range from light lilac to deep indigo. Because it is so rare in nature, it is offten associated with rare items or royalty. 
+	</div>
 
 	<script type="text/javascript" src="jqueryStart.js"></script>
 	
