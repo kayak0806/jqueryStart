@@ -61,6 +61,7 @@ body {
 	height: 300px;
 	border-radius: 300px;
 	background-color: red;
+	display: none;
 }
 #login div{
 	position: absolute;
@@ -84,5 +85,5 @@ body {
 	padding-left: 10%;
 	padding-right: 10%;
 	padding-top: 10%;
-	display: none;
+	/*display: none;*/
 }

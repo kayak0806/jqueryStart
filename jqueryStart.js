@@ -9,7 +9,7 @@ $(document).ready(function(){
 		$(this).css('left',i*150)
 	})	
 
-	bubbles	//add active class, get them moving, pause and unpause
+	bubbles	//add active class, get them moving, pause on hover
 		.addClass('active')
 		.each(function(i,bubble){
 				float($(bubble))
@@ -25,7 +25,7 @@ $(document).ready(function(){
 	// Get buttons
 	var buttons = $("#header p")
 
-	// Set buttons
+	// Set button 
 	buttons
 	.each(function(button){
 		$(this).click(function(){
@@ -41,6 +41,20 @@ $(document).ready(function(){
 					float($(this))
 				})
 		})})
+
+	//pause all
+	var pauseButton = $("#header h2")[0]
+	$(pauseButton).click(function(){
+		($(this).text()=='pause') ? $(this).text('play') : $(this).text('pause')
+		$("#field li")
+			.stop()
+			.toggleClass('active')
+			.toggleClass('lineup')
+		lineup()
+		$("#field li").each(function(){
+			float($(this))
+		})
+	})
 	// .hover(function(){
 	// 	name = $(this).text()
 	// 	selected = $("#field #"+name+" li")
