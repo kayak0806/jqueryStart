@@ -55,17 +55,17 @@ $(document).ready(function(){
 			float($(this))
 		})
 	})
-	// .hover(function(){
-	// 	name = $(this).text()
-	// 	selected = $("#field #"+name+" li")
-	// 	selected.css('background-color','#5BD200')
-	// 	},
-	// 	function(){
-	// 		name = $(this).text()
-	// 		selected = $("#field #"+name+" li")
-	// 		selected.css('background-color','#0A64A4')
-	// 	}
-	// )
+	.hover(function(){
+		name = $(this).text()
+		selected = $("#field #"+name+" li")
+		selected.css('background-color','#5BD200')
+		},
+		function(){
+			name = $(this).text()
+			selected = $("#field #"+name+" li")
+			selected.css('background-color','#0A64A4')
+		}
+	)
 })
 
 function getCoords() { //return random [x,y] coords in window
