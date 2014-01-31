@@ -40,7 +40,21 @@ $(document).ready(function(){
 			selected.each(function(){
 					float($(this))
 				})
-		})})
+		})})	
+	.hover(function(){
+
+		if (($("#header h2")).text()=="play"){
+			name = $(this).text()
+			selected = $("#field #"+name+" li")
+			selected.css('background-color','#5BD200')
+			}
+		},
+		function(){
+			name = $(this).text()
+			selected = $("#field #"+name+" li")
+			selected.css('background-color','#0A64A4')
+		}
+	)
 
 	//pause all
 	var pauseButton = $("#header h2")[0]
@@ -55,17 +69,7 @@ $(document).ready(function(){
 			float($(this))
 		})
 	})
-	.hover(function(){
-		name = $(this).text()
-		selected = $("#field #"+name+" li")
-		selected.css('background-color','#5BD200')
-		},
-		function(){
-			name = $(this).text()
-			selected = $("#field #"+name+" li")
-			selected.css('background-color','#0A64A4')
-		}
-	)
+
 })
 
 function getCoords() { //return random [x,y] coords in window
